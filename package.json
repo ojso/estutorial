@@ -11,12 +11,17 @@
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
+    "check": "tsc --noEmit",
     "build": "tsc",
     "build:clean": "tsc --build --clean",
     "start": "node dist/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:test": "tsc --project tsconfig.test.json",
+    "build:test:clean": "tsc --build --clean tsconfig.test.json",
+    "test": "node --test",
+    "test:watch": "node --test --watch"
   },
   "devDependencies": {
+    "@types/node": "^24.10.1",
     "typescript": "^5.9.3"
   }
 }

@@ -1,8 +1,12 @@
 # project structure
 
 projectRoot
-├── src
-├── dist
+├── src/
+├── test/
+├── dist/
+├── dist-test/
 ├── package.json
-└── tsconfig.json
+├── tsconfig.json
+├── tsconfig.test.json
+└── README.md
 

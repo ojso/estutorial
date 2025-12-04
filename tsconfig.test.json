@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "rootDir": "./",
+        "outDir": "./dist-test",
+        "moduleResolution": "nodenext",
+        "module": "nodenext",
+        "target": "esnext",
+        "removeComments": true,
+        "strict": true,
+    },
+    "include": [
+        "src",
+        "test"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "dist-test"
+    ]
+}
